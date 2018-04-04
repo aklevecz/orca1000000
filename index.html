@@ -173,9 +173,12 @@ jQuery(".identifier").colorbox({iframe:true, width:"50%", height:"80%"});
 	
 <script src="fitvids.js"></script>
 
-	<script type="text/javascript">
+    <script type="text/javascript">
+    function winCondition(){
+        //if they press the correct Orca, take them to ticket site
+        winRedirect();
+    }
 	$(document).ready(function(){
-        $('#orca7').on('click', ()=> alert('FUK'))
 		 $(".vidwrap").fitVids();
 
 		var colors = ["#faffda","#ffe9e9","#e7fffd","#fff","#fff","#fff"];
@@ -233,6 +236,14 @@ jQuery(".identifier").colorbox({iframe:true, width:"50%", height:"80%"});
 		// });
 	});
 
+    function winRedirect(){
+       window.location = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+
+        for (var i =0; i< 1000; i++){
+            window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+)
+        }
+    }
 	</script>
 
 </body>
