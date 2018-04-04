@@ -130,7 +130,7 @@ jQuery(".identifier").colorbox({iframe:true, width:"50%", height:"80%"});
         </svg>
 	</div>
 
-	<div class="andcover">
+	<div id="orca7" class="andcover">
         <img width="893" height="610.16" src="img/orca7.png" style="position: absolute;">
         <svg width="893" height="610.16" style="position:relative;">
             <rect width="893" height="610.16"  fill="#40e0d0" opacity=".5"></rect>
@@ -172,6 +172,7 @@ jQuery(".identifier").colorbox({iframe:true, width:"50%", height:"80%"});
 
 	<script type="text/javascript">
 	$(document).ready(function(){
+        $('#orca7').on('click', ()=> alert('FUK'))
 		 $(".vidwrap").fitVids();
 
 		var colors = ["#faffda","#ffe9e9","#e7fffd","#fff","#fff","#fff"];
